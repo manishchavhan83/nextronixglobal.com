@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nextronix Global Private Limited — Coming Soon</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    navy: {
+                        900: '#0B132B',
+                        800: '#0F1B38',
+                        700: '#162B54',
+                        600: '#1F3A70',
+                        500: '#2A4B8C'
+                    },
+                    gold: {
+                        100: '#FBF4E6',
+                        300: '#F3E5AB',
+                        400: '#E5C17C',
+                        500: '#D4A86A',
+                        600: '#B8860B',
+                        700: '#8A6405'
+                    },
+                    offwhite: '#FAFAFC'
+                },
+
+                fontFamily: {
+                    sans: ['Montserrat', 'sans-serif'],
+                    serif: ['Cinzel', 'serif']
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+>
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.png">
+
+<style>
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    /* Gold Text */
+    .gold-gradient-text {
+        background: linear-gradient(
+            135deg,
+            #F3E5AB 0%,
+            #D4A86A 45%,
+            #B8860B 80%,
+            #8A6405 100%
+        );
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Gold Button */
+    .gold-gradient-bg {
+        background: linear-gradient(
+            135deg,
+            #E5C17C 0%,
+            #D4A86A 50%,
+            #B8860B 100%
+        );
+    }
+
+    /* Logo */
+    .logo-img-custom {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .logo-glow {
+        filter:
+            drop-shadow(
+                0 10px 25px
+                rgba(212, 168, 106, 0.25)
+            )
+            drop-shadow(
+                0 4px 10px
+                rgba(15, 27, 56, 0.10)
+            );
+    }
+
+    /* Logo Floating Animation */
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+
+    }
+
+    .animate-float {
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #0F1B38;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #D4A86A;
+        border-radius: 4px;
+    }
+
+    /* Footer always remains at bottom */
+    .page-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+
+        .logo-img-custom {
+            max-width: 240px;
+        }
+
+    }
+
+</style>
+</head>
+
+<body
+    class="
+        bg-offwhite
+        text-navy-800
+        font-sans
+        antialiased
+        overflow-x-hidden
+    "
+>
+
+<!-- ==========================================
+     PARTICLE BACKGROUND
+=========================================== -->
+
+<canvas
+    id="particleCanvas"
+    class="fixed inset-0 pointer-events-none z-0"
+></canvas>
+
+
+<!-- ==========================================
+     BACKGROUND LIGHT EFFECT
+=========================================== -->
+
+<div
+    class="
+        fixed
+        top-0
+        left-1/2
+        -translate-x-1/2
+        w-full
+        max-w-7xl
+        h-72
+        bg-gradient-to-b
+        from-navy-800/5
+        via-gold-500/5
+        to-transparent
+        pointer-events-none
+        z-0
+        blur-3xl
+    "
+></div>
+
+
+<!-- ==========================================
+     PAGE WRAPPER
+=========================================== -->
+
+<div
+    class="
+        page-wrapper
+        relative
+        z-10
+        max-w-5xl
+        mx-auto
+        w-full
+        px-4
+        sm:px-6
+        lg:px-8
+    "
+>
+
+
+    <!-- ======================================
+         HEADER / LOGO
+    ======================================= -->
+
+    <header
+        class="
+            text-center
+            pt-4
+            pb-2
+        "
+    >
+
+<a
+    href="https://nextronixglobal.com/"
+    title="Nextronix Global Private Limited"
+    aria-label="Visit Nextronix Global Private Limited website"
+>
+    <img
+        src="nextronix_logo.png"
+        alt="Nextronix Global Private Limited"
+        class="
+            logo-img-custom
+            mx-auto
+            logo-glow
+            animate-float
+            cursor-pointer
+        "
+        style="max-height:180px;"
+        onerror="
+            this.onerror=null;
+            this.src='https://placehold.co/500x200/FAFAFC/0F1B38?text=NEXTRONIX+GLOBAL';
+        "
+    >
+</a>
+
+
+        <!-- Divider -->
+        <div
+            class="
+                flex
+                items-center
+                justify-center
+                gap-3
+                mt-2
+                max-w-md
+                mx-auto
+            "
+        >
+
+            <span
+                class="
+                    h-px
+                    flex-1
+                    bg-gradient-to-r
+                    from-transparent
+                    via-gold-500
+                    to-gold-600
+                "
+            ></span>
+
+
+            <span
+                class="
+                    h-px
+                    flex-1
+                    bg-gradient-to-l
+                    from-transparent
+                    via-gold-500
+                    to-gold-600
+                "
+            ></span>
+
+        </div>
+
+    </header>
+
+
+    <!-- ======================================
+         MAIN HERO
+    ======================================= -->
+
+    <main
+        class="
+            text-center
+            pt-4
+            pb-4
+        "
+    >
+
+        <div
+            class="
+                relative
+                max-w-4xl
+                mx-auto
+            "
+        >
+
+            <!-- Glow -->
+            <div
+                class="
+                    absolute
+                    -inset-2
+                    bg-gradient-to-r
+                    from-gold-500/10
+                    via-navy-800/10
+                    to-gold-500/10
+                    rounded-2xl
+                    blur-xl
+                "
+            ></div>
+
+
+            <!-- Heading -->
+            <h1
+                class="
+                    relative
+                    font-black
+                    font-serif
+                    tracking-tight
+                    leading-none
+                    text-navy-800
+                "
+            >
+
+                <span
+                    class="
+                        block
+                        text-2xl
+                        sm:text-3xl
+                        md:text-4xl
+                        tracking-widest
+                        font-sans
+                        font-bold
+                        mb-1
+                        text-navy-800/90
+                    "
+                >
+                    WE ARE
+                </span>
+
+
+                <span
+                    class="
+                        gold-gradient-text
+                        drop-shadow-md
+                        tracking-wider
+                        text-5xl
+                        sm:text-6xl
+                        md:text-7xl
+                        lg:text-8xl
+                    "
+                >
+                    COMING SOON
+                </span>
+
+            </h1>
+
+        </div>
+
+
+        <!-- Description -->
+
+        <p
+            class="
+                max-w-2xl
+                mx-auto
+                mt-5
+                mb-0
+                px-4
+                text-sm
+                sm:text-base
+                md:text-lg
+                text-navy-800/80
+                leading-relaxed
+            "
+        >
+
+            Nextronix Global Private Limited is preparing
+            an extraordinary experience for global enterprises.
+            Quality, trust, and advanced solutions are on their way.
+
+        </p>
+
+    </main>
+
+
+    <!-- ======================================
+         FOOTER
+         mt-auto = PUSH FOOTER TO BOTTOM
+    ======================================= -->
+
+    <footer
+        class="
+            mt-auto
+            pt-4
+            pb-5
+            border-t
+            border-gold-400/20
+        "
+    >
+
+        <div
+            class="
+                flex
+                flex-col
+                sm:flex-row
+                items-center
+                justify-between
+                gap-3
+                text-xs
+                text-navy-800/70
+            "
+        >
+
+            <!-- Copyright -->
+
+            <p
+                class="
+                    text-center
+                    sm:text-left
+                    m-0
+                "
+            >
+
+                &copy;
+
+                <span id="year"></span>
+
+                <span
+                    class="
+                        font-semibold
+                        text-navy-800
+                    "
+                >
+                    Nextronix Global Private Limited
+                </span>
+
+                . All rights reserved.
+
+            </p>
+
+
+            <!-- Footer Links -->
+
+            <div
+                class="
+                    flex
+                    items-center
+                    gap-5
+                "
+            >
+
+                <!-- Corporate Inquiry -->
+
+                <button
+                    onclick="toggleInfoModal()"
+                    class="
+                        hover:text-gold-600
+                        transition-colors
+                    "
+                >
+
+                    <i
+                        class="
+                            fa-solid
+                            fa-circle-info
+                            mr-1
+                        "
+                    ></i>
+
+                    Corporate Inquiry
+
+                </button>
+
+
+                <!-- Email -->
+
+                <a
+                    href="mailto:info@nextronixglobal.com"
+                    class="
+                        hover:text-gold-600
+                        transition-colors
+                    "
+                >
+
+                    <i
+                        class="
+                            fa-regular
+                            fa-envelope
+                            mr-1
+                        "
+                    ></i>
+
+                    Email Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+<!-- ==========================================
+     CORPORATE INQUIRY MODAL
+=========================================== -->
+
+<div
+    id="infoModal"
+    class="
+        fixed
+        inset-0
+        bg-navy-900/60
+        backdrop-blur-md
+        z-50
+        flex
+        items-center
+        justify-center
+        opacity-0
+        pointer-events-none
+        transition-all
+        duration-300
+        p-4
+    "
+>
+
+    <div
+        id="modalContainer"
+        class="
+            bg-white
+            rounded-3xl
+            p-6
+            sm:p-8
+            max-w-lg
+            w-full
+            border
+            border-gold-500/40
+            shadow-2xl
+            transform
+            scale-95
+            transition-all
+            duration-300
+            relative
+        "
+    >
+
+        <!-- Close -->
+
+        <button
+            onclick="toggleInfoModal()"
+            class="
+                absolute
+                top-5
+                right-5
+                text-navy-800/50
+                hover:text-navy-800
+                w-8
+                h-8
+                rounded-full
+                flex
+                items-center
+                justify-center
+                hover:bg-navy-800/5
+                transition
+            "
+        >
+
+            <i
+                class="
+                    fa-solid
+                    fa-xmark
+                    text-lg
+                "
+            ></i>
+
+        </button>
+
+
+        <!-- Modal Header -->
+
+        <div
+            class="
+                flex
+                items-center
+                space-x-3
+                mb-4
+            "
+        >
+
+            <div
+                class="
+                    w-10
+                    h-10
+                    rounded-full
+                    bg-navy-800
+                    flex
+                    items-center
+                    justify-center
+                    text-gold-400
+                "
+            >
+
+                <i
+                    class="
+                        fa-solid
+                        fa-building
+                    "
+                ></i>
+
+            </div>
+
+
+            <div>
+
+                <h4
+                    class="
+                        font-bold
+                        font-serif
+                        text-navy-800
+                        text-lg
+                    "
+                >
+                    Nextronix Global Pvt. Ltd.
+                </h4>
+
+
+                <p
+                    class="
+                        text-xs
+                        text-gold-600
+                        font-semibold
+                        tracking-wider
+                        uppercase
+                    "
+                >
+                    Corporate Office
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Modal Description -->
+
+        <p
+            class="
+                text-sm
+                text-navy-800/80
+                mb-5
+                leading-relaxed
+            "
+        >
+
+            For official corporate partnerships,
+            investment relations, or pre-launch enterprise
+            inquiries, please connect with our team.
+
+        </p>
+
+
+        <!-- Company Information -->
+
+        <div
+            class="
+                space-y-3
+                bg-offwhite
+                p-4
+                rounded-2xl
+                border
+                border-gold-500/20
+                text-xs
+                mb-5
+            "
+        >
+
+            <!-- Status -->
+
+            <div
+                class="
+                    flex
+                    justify-between
+                    items-center
+                    py-1
+                    border-b
+                    border-navy-800/10
+                "
+            >
+
+                <span
+                    class="
+                        text-navy-800/60
+                        font-medium
+                    "
+                >
+                    Status:
+                </span>
+
+
+                <span
+                    class="
+                        font-semibold
+                        text-emerald-600
+                    "
+                >
+
+                    <span
+                        class="
+                            inline-block
+                            w-1.5
+                            h-1.5
+                            rounded-full
+                            bg-emerald-500
+                            mr-1.5
+                            animate-pulse
+                        "
+                    ></span>
+
+                    Incorporated & Active
+
+                </span>
+
+            </div>
+
+
+            <!-- Entity Type -->
+
+            <div
+                class="
+                    flex
+                    justify-between
+                    items-center
+                    py-1
+                    border-b
+                    border-navy-800/10
+                "
+            >
+
+                <span
+                    class="
+                        text-navy-800/60
+                        font-medium
+                    "
+                >
+                    Entity Type:
+                </span>
+
+
+                <span
+                    class="
+                        font-semibold
+                        text-navy-800
+                    "
+                >
+                    Private Limited Company
+                </span>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div
+                class="
+                    flex
+                    justify-between
+                    items-center
+                    py-1
+                "
+            >
+
+                <span
+                    class="
+                        text-navy-800/60
+                        font-medium
+                    "
+                >
+                    Inquiries Email:
+                </span>
+
+
+                <span
+                    class="
+                        font-semibold
+                        text-gold-600
+                    "
+                >
+                    info@nextronixglobal.com
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Close Button -->
+
+        <button
+            onclick="toggleInfoModal()"
+            class="
+                w-full
+                py-3
+                bg-navy-800
+                hover:bg-navy-700
+                text-gold-300
+                font-bold
+                text-sm
+                rounded-xl
+                transition-all
+                shadow-md
+            "
+        >
+            Close Window
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ==========================================
+     JAVASCRIPT
+=========================================== -->
+
+<script>
+
+    /* ==============================
+       CURRENT YEAR
+    ============================== */
+
+    document.getElementById('year').innerText =
+        new Date().getFullYear();
+
+
+    /* ==============================
+       CORPORATE MODAL
+    ============================== */
+
+    function toggleInfoModal() {
+
+        const modal =
+            document.getElementById('infoModal');
+
+        const container =
+            document.getElementById('modalContainer');
+
+
+        if (
+            modal.classList.contains(
+                'opacity-0'
+            )
+        ) {
+
+            modal.classList.remove(
+                'opacity-0',
+                'pointer-events-none'
+            );
+
+            container.classList.remove(
+                'scale-95'
+            );
+
+            container.classList.add(
+                'scale-100'
+            );
+
+        } else {
+
+            modal.classList.add(
+                'opacity-0',
+                'pointer-events-none'
+            );
+
+            container.classList.remove(
+                'scale-100'
+            );
+
+            container.classList.add(
+                'scale-95'
+            );
+
+        }
+
+    }
+
+
+    /* ==============================
+       PARTICLE CANVAS
+    ============================== */
+
+    const canvas =
+        document.getElementById(
+            'particleCanvas'
+        );
+
+    const ctx =
+        canvas.getContext('2d');
+
+
+    let width;
+    let height;
+    let particles = [];
+
+
+    function resizeCanvas() {
+
+        width =
+            canvas.width =
+            window.innerWidth;
+
+        height =
+            canvas.height =
+            window.innerHeight;
+
+    }
+
+
+    window.addEventListener(
+        'resize',
+        resizeCanvas
+    );
+
+
+    resizeCanvas();
+
+
+    /* ==============================
+       PARTICLE CLASS
+    ============================== */
+
+    class Particle {
+
+        constructor() {
+
+            this.x =
+                Math.random() * width;
+
+            this.y =
+                Math.random() * height;
+
+            this.radius =
+                Math.random() * 1.5 + 0.5;
+
+
+            const colors = [
+
+                'rgba(212,168,106,',
+                'rgba(184,134,11,',
+                'rgba(22,43,84,'
+
+            ];
+
+
+            this.colorBase =
+                colors[
+                    Math.floor(
+                        Math.random() *
+                        colors.length
+                    )
+                ];
+
+
+            this.alpha =
+                Math.random() * 0.3 + 0.1;
+
+
+            this.speedX =
+                (Math.random() - 0.5)
+                * 0.25;
+
+
+            this.speedY =
+                (Math.random() - 0.5)
+                * 0.25
+                - 0.1;
+
+        }
+
+
+        update() {
+
+            this.x += this.speedX;
+            this.y += this.speedY;
+
+
+            if (this.x < 0)
+                this.x = width;
+
+            if (this.x > width)
+                this.x = 0;
+
+            if (this.y < 0)
+                this.y = height;
+
+            if (this.y > height)
+                this.y = 0;
+
+        }
+
+
+        draw() {
+
+            ctx.beginPath();
+
+            ctx.arc(
+                this.x,
+                this.y,
+                this.radius,
+                0,
+                Math.PI * 2
+            );
+
+            ctx.fillStyle =
+                this.colorBase +
+                this.alpha +
+                ')';
+
+            ctx.fill();
+
+        }
+
+    }
+
+
+    /* ==============================
+       INIT PARTICLES
+    ============================== */
+
+    function initParticles() {
+
+        particles = [];
+
+        const particleCount =
+            Math.min(
+                Math.floor(
+                    window.innerWidth / 25
+                ),
+                40
+            );
+
+
+        for (
+            let i = 0;
+            i < particleCount;
+            i++
+        ) {
+
+            particles.push(
+                new Particle()
+            );
+
+        }
+
+    }
+
+
+    /* ==============================
+       ANIMATE PARTICLES
+    ============================== */
+
+    function animateParticles() {
+
+        ctx.clearRect(
+            0,
+            0,
+            width,
+            height
+        );
+
+
+        particles.forEach(
+            particle => {
+
+                particle.update();
+                particle.draw();
+
+            }
+        );
+
+
+        requestAnimationFrame(
+            animateParticles
+        );
+
+    }
+
+
+    initParticles();
+    animateParticles();
+
+</script>
+</body>
+</html>
